@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Captured Moments</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: white;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        header .logo a {
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #333;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        header nav ul li a:hover {
+            color: #007BFF;
+        }
+
+        header .cta .contact-btn {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        header .cta .contact-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .gallery-container {
+            max-width: 1200px;
+            margin: 80px auto 20px; /* Margin-top adjusted for fixed header */
+            padding: 20px;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 15px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery-item:hover .date-caption {
+            opacity: 1;
+        }
+
+        .date-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            font-size: 14px;
+            font-weight: bold;
+            border-top: 2px solid white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#">Captured Moments</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="experience.html">Experience & Skills</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="cta">
+            <a href="contact.html" class="contact-btn">Contact</a>
+        </div>
+    </header>
+
+    <div class="gallery-container">
+        <div class="gallery-grid">
+
+            <div class="gallery-item">
+                <img src="images/celebrity photoshoot.webp" alt="Photo 1">
+                <div class="date-caption">2024-07-01</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/modelling.webp" alt="Photo 2">
+                <div class="date-caption">2024-07-02</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/nature photography.png" alt="Photo 3">
+                <div class="date-caption">2024-07-03</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/new1.jpg" alt="Photo 4">
+                <div class="date-caption">2024-07-04</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/wedding photo.jpg" alt="Photo 5">
+                <div class="date-caption">2024-07-05</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/new2.jpg!d" alt="Photo 1">
+                <div class="date-caption">2024-07-01</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/new3.jpg" alt="Photo 2">
+                <div class="date-caption">2024-07-02</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/new4.jpg" alt="Photo 3">
+                <div class="date-caption">2024-07-03</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/new5.jpg" alt="Photo 4">
+                <div class="date-caption">2024-07-04</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/new6.jpeg" alt="Photo 5">
+                <div class="date-caption">2024-07-05</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/new7.jpeg" alt="Photo 1">
+                <div class="date-caption">2024-07-01</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/new8.webp" alt="Photo 2">
+                <div class="date-caption">2024-07-02</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/new9.webp" alt="Photo 2">
+                <div class="date-caption">2024-07-02</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/huhu.webp" alt="Photo 2">
+                <div class="date-caption">2024-07-02</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/new11.jpeg" alt="Photo 2">
+                <div class="date-caption">2024-07-02</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/celebrity photoshoot.webp" alt="Photo 1">
+                <div class="date-caption">2024-07-01</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/modelling.webp" alt="Photo 2">
+                <div class="date-caption">2024-07-02</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/nature photography.png" alt="Photo 3">
+                <div class="date-caption">2024-07-03</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/new1.jpg" alt="Photo 4">
+                <div class="date-caption">2024-07-04</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/wedding photo.jpg" alt="Photo 5">
+                <div class="date-caption">2024-07-05</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/new2.jpg!d" alt="Photo 1">
+                <div class="date-caption">2024-07-01</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/new3.jpg" alt="Photo 2">
+                <div class="date-caption">2024-07-02</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/new4.jpg" alt="Photo 3">
+                <div class="date-caption">2024-07-03</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/new5.jpg" alt="Photo 4">
+                <div class="date-caption">2024-07-04</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/new6.jpeg" alt="Photo 5">
+                <div class="date-caption">2024-07-05</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/new7.jpeg" alt="Photo 1">
+                <div class="date-caption">2024-07-01</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/new8.webp" alt="Photo 2">
+                <div class="date-caption">2024-07-02</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/new9.webp" alt="Photo 2">
+                <div class="date-caption">2024-07-02</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/huhu.webp" alt="Photo 2">
+                <div class="date-caption">2024-07-02</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/new11.jpeg" alt="Photo 2">
+                <div class="date-caption">2024-07-02</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/new2.jpg!d" alt="Photo 1">
+                <div class="date-caption">2024-07-01</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/new3.jpg" alt="Photo 2">
+                <div class="date-caption">2024-07-02</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/new4.jpg" alt="Photo 3">
+                <div class="date-caption">2024-07-03</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/new5.jpg" alt="Photo 4">
+                <div class="date-caption">2024-07-04</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/new6.jpeg" alt="Photo 5">
+                <div class="date-caption">2024-07-05</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/celebrity photoshoot.webp" alt="Photo 1">
+                <div class="date-caption">2024-07-01</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/modelling.webp" alt="Photo 2">
+                <div class="date-caption">2024-07-02</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/nature photography.png" alt="Photo 3">
+                <div class="date-caption">2024-07-03</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/new1.jpg" alt="Photo 4">
+                <div class="date-caption">2024-07-04</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/wedding photo.jpg" alt="Photo 5">
+                <div class="date-caption">2024-07-05</div>
+            </div>
+            
+            
+
+        </div>
+    </div>
+</body>
+</html>
